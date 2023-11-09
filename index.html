@@ -3,9 +3,13 @@
 <head>
   <meta charset="utf-8">
   
+
   
   <title>Hexo</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
   <meta property="og:type" content="website">
 <meta property="og:title" content="Hexo">
 <meta property="og:url" content="http://example.com/index.html">
@@ -17,83 +21,68 @@
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
   
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="icon" href="/images/default-avatar.jpg">
   
   
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
   
   
 <link rel="stylesheet" href="/css/style.css">
 
   
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="stylesheet" href="/css/highlight.css">
 
-  
-  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
 <body>
-  <div id="container">
-    <div id="wrap">
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
       <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">Hexo</a>
-      </h1>
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        <a class="nav-item" href="/" title
         
-          <a class="main-nav-link" href="/">Home</a>
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
         
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
+        >归档</a>
+      
+    </nav>
   </div>
 </header>
-
-      <div class="outer">
+      <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
-    <article id="post-hello-world" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/11/09/hello-world/" class="article-date">
-  <time class="dt-published" datetime="2023-11-09T07:46:43.499Z" itemprop="datePublished">2023-11-09</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <article id="post-hello-world" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/11/09/hello-world/">Hello World</a>
+      <a class="article-title" href="/2023/11/09/hello-world/">Hello World</a>
     </h1>
   
 
-      </header>
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/09/hello-world/" class="article-date">
+  <time datetime="2023-11-09T07:46:43.499Z" itemprop="datePublished">2023-11-09</time>
+</a>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
       
         <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
@@ -111,40 +100,37 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/09/hello-world/" data-id="cloqw2lfw0000ysv5bavv9din" data-title="Hello World" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+    
   </div>
+  
   
 </article>
 
-
-
   
-    <article id="我的博客-我的博客" class="h-entry article article-type-我的博客" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
-  <time class="dt-published" datetime="2023-11-08T09:20:31.000Z" itemprop="datePublished">2023-11-08</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <article id="我的博客-我的博客" class="article global-container article-type-我的博客" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">第2天实习日志</a>
+      <a class="article-title" href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/">第2天实习日志</a>
     </h1>
   
 
-      </header>
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" class="article-date">
+  <time datetime="2023-11-08T09:20:31.000Z" itemprop="datePublished">2023-11-08</time>
+</a>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
       
         <h1 id="主要学习内容如下"><a href="#主要学习内容如下" class="headerlink" title="主要学习内容如下"></a>主要学习内容如下</h1><h2 id="1-typora-图床使用"><a href="#1-typora-图床使用" class="headerlink" title="1. typora+图床使用"></a>1. typora+图床使用</h2><ul>
 <li><p>学习markdown语法（标题、字体、样式、分隔线、删除线、下划线、脚注、换行、列表、区块引用、代码、链接、图片、表格、支持的HTML元素、转义字符）</p>
@@ -320,40 +306,37 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2/" data-id="cloqwedl10003skv52lat32nh" data-title="第2天实习日志" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+    
   </div>
+  
   
 </article>
 
-
-
   
-    <article id="post-我的博客-1" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/" class="article-date">
-  <time class="dt-published" datetime="2023-11-07T09:30:22.000Z" itemprop="datePublished">2023-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <article id="post-我的博客-1" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/">实习第1天日志</a>
+      <a class="article-title" href="/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/">实习第1天日志</a>
     </h1>
   
 
-      </header>
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/" class="article-date">
+  <time datetime="2023-11-07T09:30:22.000Z" itemprop="datePublished">2023-11-07</time>
+</a>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
       
         <h2 id="主要学习内容如下"><a href="#主要学习内容如下" class="headerlink" title="主要学习内容如下"></a>主要学习内容如下</h2><ul>
 <li><p>主要以VMware虚拟机的安装配置为主，进行一系列操作</p>
@@ -371,83 +354,89 @@
 
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/" data-id="cloqwedkr0001skv56lm554f4" data-title="实习第1天日志" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+    
   </div>
+  
   
 </article>
 
-
-
   
-    <article id="post-volcano" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/11/07/volcano/" class="article-date">
-  <time class="dt-published" datetime="2023-11-07T07:33:44.000Z" itemprop="datePublished">2023-11-07</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
+    <article id="post-volcano" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
   
     <h1 itemprop="name">
-      <a class="p-name article-title" href="/2023/11/07/volcano/">volcano</a>
+      <a class="article-title" href="/2023/11/07/volcano/">volcano</a>
     </h1>
   
 
-      </header>
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/07/volcano/" class="article-date">
+  <time datetime="2023-11-07T07:33:44.000Z" itemprop="datePublished">2023-11-07</time>
+</a>
     
-    <div class="e-content article-entry" itemprop="articleBody">
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
       
         
       
     </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2023/11/07/volcano/" data-id="cloqwedkw0002skv5d9i207p5" data-title="volcano" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
+    
   </div>
+  
   
 </article>
 
-
-
   
+
 
 
 </section>
-        
-          <aside id="sidebar">
+        <aside id="sidebar">
   
-    
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        一路烟霞
+      
+    </h3>
+    <p class="avatar-slogan">
+      特别耐撕的小前端，资深的打酱油攻城狮。
+    </p>
+  </div>
+</div>
+
 
   
     
 
   
     
+
   
     
-  <div class="widget-wrap">
+  
+    
+  <div class="widget-box">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
     </div>
   </div>
 
-
   
     
-  <div class="widget-wrap">
+  <div class="widget-box">
     <h3 class="widget-title">Recent Posts</h3>
     <div class="widget">
       <ul>
@@ -473,37 +462,43 @@
   </div>
 
   
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
       
-      &copy; 2023 John Doe<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
     </div>
   </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2023 John Doe &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
 </footer>
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
 
 
 
@@ -513,7 +508,16 @@
 
 
 
-
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
   </div>
 </body>
 </html>
