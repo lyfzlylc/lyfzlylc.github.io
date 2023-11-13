@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-10T13:18:52.456Z</updated>
+  <updated>2023-11-13T14:13:49.448Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第5天实习日志</title>
+    <link href="http://example.com/2023/11/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-5/"/>
+    <id>http://example.com/2023/11/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-5/</id>
+    <published>2023-11-13T09:30:22.000Z</published>
+    <updated>2023-11-13T14:13:49.448Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="php语法学习和网站搭建"><a href="#php语法学习和网站搭建" class="headerlink" title="php语法学习和网站搭建"></a>php语法学习和网站搭建</h1><h2 id="phpstudy-php快速搭建页面"><a href="#phpstudy-php快速搭建页面" class="headerlink" title="phpstudy+php快速搭建页面"></a>phpstudy+php快速搭建页面</h2><h3 id="1-下载phpstudy软件"><a href="#1-下载phpstudy软件" class="headerlink" title="1. 下载phpstudy软件"></a>1. 下载phpstudy软件</h3><h3 id="2-配置phpstudy"><a href="#2-配置phpstudy" class="headerlink" title="2. 配置phpstudy"></a>2. 配置phpstudy</h3><ul><li><p>点击启动Apache和Mysql</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113210429105.png" alt="image-20231113210429105"></p></li><li><p>更改php版本：点击网站-&gt;管理-&gt;php版本-&gt;更多版本-&gt;点击下载php5.5.9nts-&gt;下载完成后切换为该版本</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113210547467.png" alt="image-20231113210547467"></p></li><li><p>打开根目录，清除WWW文件下所有文件</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113210818447.png" alt="image-20231113210818447"></p></li><li><p>点击修改-&gt;高级配置-&gt;打开目录索引-&gt;确认</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113210906914.png" alt="image-20231113210906914"></p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113210949957.png" alt="image-20231113210949957"></p></li><li><p>点击软件管理-&gt;下载SQL_Front5.3-&gt;下载完成后点开管理</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113215109853.png" alt="image-20231113215109853"></p><p>(本人在打开SQL_Front5.3出现错误提示：</p><p>SQL执行错误#105.从数据库的响应:<br>Expresion #2 of SELECT list is not in GROUP BY clause and contains nonaggregated column<br>&#96;information_schema.USER_PRIVILEGES.TABLE_CATALOG’ which is not<br>functionaly dependent on columns in GROUP BY clause; this is<br>incompatible with sql_mode&#x3D;only_fulgroup_by</p><p>经过查找，找到[解决方案]([MySQL-Front访问数据库报错 SQL执行错误 #1055 Expression #2 of SELECT list is not in GROUP BY……错误的解决办法_链接数据库错误sql 执行错误 # 1055. 从数据库的响应: expression #2 of _只吃青椒炒肉的博客-CSDN博客](<a href="https://blog.csdn.net/qq_56727664/article/details/121037376?ops_request_misc=&request_id=&biz_id=102&utm_term=sQL%E6%89%A7%E8%A1%8C%E9%94%99%E8%AF%AF&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121037376.142%5Ev96%5Epc_search_result_base6&spm=1018.2226.3001.4187#105.%E4%BB%8E%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E5%93%8D%E5%BA%94">https://blog.csdn.net/qq_56727664/article/details/121037376?ops_request_misc=&amp;request_id=&amp;biz_id=102&amp;utm_term=sQL执行错误&amp;utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-1-121037376.142^v96^pc_search_result_base6&amp;spm=1018.2226.3001.4187#105.从数据库的响应</a>: Expresion&amp;utm_medium&#x3D;distribute.pc_search_result.none-task-blog-2<del>all</del>sobaiduweb~default-1-121037376.142^v96^pc_search_result_base6)) )</p></li><li><p><a href="http://127.0.0.1/sqli/">配置数据库</a>，库名为security，用户名root，密码root</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113215810239.png" alt="image-20231113215810239"></p><p>出现如下界面，则代表数据库建立并连接成功</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113215849223.png" alt="image-20231113215849223"></p></li></ul><h3 id="3-在WWW文件目录下编写php文件"><a href="#3-在WWW文件目录下编写php文件" class="headerlink" title="3. 在WWW文件目录下编写php文件"></a>3. 在WWW文件目录下编写php文件</h3><p>初步编写好index.php、link.php、zhuye.php文件，后期可修改</p><ul><li><p>index.php</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113220332728.png" alt="image-20231113220332728"></p></li><li><p>link.php</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113220426856.png" alt="image-20231113220426856"></p></li><li><p>zhuye.php</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113220500137.png" alt="image-20231113220500137"></p></li></ul><h3 id="4-运行php文件"><a href="#4-运行php文件" class="headerlink" title="4.运行php文件"></a>4.运行php文件</h3><ul><li><p>可从phpstudy软件进入网站，操作步骤如下：</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113221242953.png" alt="image-20231113221242953"></p></li><li><p>运行成功后界面如下：</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113221300653.png" alt="image-20231113221300653"></p></li><li><p>输入用户名admin，密码admin，点击提交，跳转界面如下：</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231113221317870.png" alt="image-20231113221317870"></p></li></ul>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;php语法学习和网站搭建&quot;&gt;&lt;a href=&quot;#php语法学习和网站搭建&quot; class=&quot;headerlink&quot; title=&quot;php语法学习和网站搭建&quot;&gt;&lt;/a&gt;php语法学习和网站搭建&lt;/h1&gt;&lt;h2 id=&quot;phpstudy-php快速搭建页面&quot;&gt;&lt;a hr</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>第4天实习日志</title>
