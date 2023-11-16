@@ -59,6 +59,118 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="post-我的博客-7" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/">第7天学习笔记</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/" class="article-date">
+  <time datetime="2023-11-16T09:30:22.000Z" itemprop="datePublished">2023-11-16</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="1-Linux系统目录结构"><a href="#1-Linux系统目录结构" class="headerlink" title="1. Linux系统目录结构"></a>1. Linux系统目录结构</h2><h3 id="1）主要目录介绍"><a href="#1）主要目录介绍" class="headerlink" title="1）主要目录介绍"></a>1）主要目录介绍</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">/bin //存放常用命令</span><br><span class="line">/sbin (/usr/sbin、/usr/local/sbin) //s就是Super User的意思，这里存放的是系统管理员使用的系统管理程序</span><br><span class="line">/root //管理员用户的家目录</span><br><span class="line">/etc  //存放系统配置文件</span><br><span class="line">/home //所有普通用户的家目录</span><br><span class="line">/var  //存放系统运行中常改变的文件，如系统日志</span><br><span class="line">/lib //存放库文件</span><br><span class="line">/usr //存放系统应用程序及文档</span><br><span class="line">/boot  //存放启动Linux时的一些核心文件，包括一些链接文件和镜像文件，安装文件不要放在这</span><br><span class="line">/proc  //虚拟文件系统目录，以进程为单位存储内存的映射</span><br><span class="line">/srv  //服务启动之后需要访问的数据目录</span><br><span class="line">/sys  //这是linux2.6内核的一个很大的变化。该目录下安装了26内核中新出现的一个文件系线。</span><br><span class="line">/tmp //存放各种临时文件，是所有用户均可访问的地点</span><br><span class="line">/dev //存放设备文件</span><br><span class="line">/media //linux系统会自动识别一些设备，例如U盘、光驱等等，当识别后，linux会把识别的设备挂载到这个目录下。</span><br><span class="line">/mnt //临时挂载点</span><br><span class="line">/opt //给主机额外安装软件所摆放的目录</span><br><span class="line">/lost+found //在EXT2或EXT3文件系统中，当系统意外崩溃或机器意外关机，产生的一些文件碎片放在这里。在系统启动的过程中fsck工具会检查这里，并修复已经损坏的文件系统。有时系统发生问题，有很多的文件被移到这个目录中，可能会用手工的方法来修复，或者移动文件到运来的位置上</span><br><span class="line">/www //用于存储web应用程序或网站文件</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2）结构"><a href="#2）结构" class="headerlink" title="2）结构"></a>2）结构</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimgimage-20231116171819546.png"></p>
+<h2 id="2-vi-vim编辑器"><a href="#2-vi-vim编辑器" class="headerlink" title="2.vi&#x2F;vim编辑器"></a>2.vi&#x2F;vim编辑器</h2><p>用户名@主机名组成（kali@kali），~代表当前目录位置为用户家目录，#代表管理员用户（root用户），$代表普通用户</p>
+<p>hostname查看主机名、whoami查看用户名</p>
+<h3 id="vi的三种模式"><a href="#vi的三种模式" class="headerlink" title="vi的三种模式"></a>vi的三种模式</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img360%E6%88%AA%E5%9B%BE184910048810592.png" alt="360截图184910048810592"></p>
+<h4 id="1-一般模式"><a href="#1-一般模式" class="headerlink" title="1.一般模式"></a>1.一般模式</h4><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116192909427.png" alt="image-20231116192909427"></p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">命令模式：此模式下，可使用方向键（上、下、左、右键）或 k、j、h、i 移动光标的位置，还可以对文件内容进行复制、粘贴、替换、删除等操作。</span><br><span class="line">行间跳转：</span><br><span class="line"></span><br><span class="line">G:     最后一行</span><br><span class="line">gg:    第一行</span><br><span class="line">1G：第一行</span><br><span class="line">10G：跳转到第十行</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">删除命令</span><br><span class="line">d 删除命令，可结合光标跳转字符，实现范围删除</span><br><span class="line">d$ 删除到行尾</span><br><span class="line">d^ 删除到非空行首</span><br><span class="line">d0 删除到行首</span><br><span class="line">dw 下一个单词的词首</span><br><span class="line">de 当前或下一个单词的词尾</span><br><span class="line">db 当前或上一个单词的词首</span><br><span class="line"></span><br><span class="line">x 删除一个字符</span><br><span class="line"></span><br><span class="line">dd  剪切光标所在的行  </span><br><span class="line">#dd 多行删除        </span><br><span class="line"></span><br><span class="line">复制命令</span><br><span class="line">yy   复制行</span><br><span class="line">#yy 复制多行</span><br><span class="line"></span><br><span class="line">粘贴命令</span><br><span class="line">p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面</span><br><span class="line">P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的前面</span><br><span class="line"></span><br><span class="line">行内</span><br><span class="line">^ 跳转至行首的第一个非空白字符</span><br><span class="line">0 跳转至行首</span><br><span class="line">$ 跳转至行尾</span><br><span class="line"></span><br><span class="line">命令模式翻屏操作</span><br><span class="line">Ctrl+f 向文件尾部翻一屏,相当于Pagedown</span><br><span class="line">Ctrl+b 向文件首部翻一屏,相当于Pageup</span><br><span class="line">Ctrl+d 向文件尾部翻半屏</span><br><span class="line">Ctrl+u 向文件首部翻半屏</span><br><span class="line"></span><br><span class="line">替换命令</span><br><span class="line">r 只替换光标所在处的一个字符</span><br><span class="line"></span><br><span class="line">撤消更改</span><br><span class="line">u 撤销最近的更改，相当于windows中ctrl+z</span><br><span class="line">#u 撤销之前多次更改</span><br><span class="line">U 撤消光标落在这行后所有此行的更改</span><br><span class="line">Ctrl-r 重做最后的“撤消”更改，相当于windows中crtl+y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">. 重复前一个操作</span><br><span class="line">#. 重复前一个操作#次</span><br><span class="line"></span><br><span class="line">~ 转换大小写</span><br></pre></td></tr></table></figure></div>
+
+<h4 id="2）编辑模式"><a href="#2）编辑模式" class="headerlink" title="2）编辑模式"></a>2）编辑模式</h4><p>输入模式: 使 Vim 进行输入模式的方式是在命令模式状态下输入 i、I、a、A、o、O 等插入命令，当编辑文件完成后按 Esc 键即可返回命令模式。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116172426432.png" alt="image-20231116172426432"></p>
+<h4 id="3）命令模式"><a href="#3）命令模式" class="headerlink" title="3）命令模式"></a>3）命令模式</h4><p>末行模式：文件中的指定内容执行保存、查找或替换等操作。使 Vim 切换到编辑模式的方法是在命令模式状态下按“：”（英文冒号）键，此时 Vim 窗口的左下方出现一个“：”符号，这是就可以输入相关指令进行操作了。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">基础命令</span><br><span class="line">#               具体第#行，例如2表示第2行</span><br><span class="line">#,#            从左侧#表示起始行，到右侧#表示结尾行 </span><br><span class="line">#,+#          从左侧#表示的起始行，加上右侧#表示的行数，范例：2,+3 表示2到5行</span><br><span class="line">.                当前行</span><br><span class="line">$               最后一行</span><br><span class="line">.,$-1          当前行到倒数第二行</span><br><span class="line">%              全文, 相当于1,$</span><br><span class="line"></span><br><span class="line">查找并替换</span><br><span class="line">格式： 范围  s/要查找的内容/替换的内容/g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line">要查找的内容：可使用基本正则表达式模式   </span><br><span class="line">替换为的内容：不能使用模式，但可以使用\1, \2, ...等后向引用符号；还可以使用“&amp;”引用前面查找时查</span><br><span class="line">找到的整个内容</span><br><span class="line"></span><br><span class="line">修饰符：</span><br><span class="line">i #忽略大小写</span><br><span class="line">g #全局替换，默认情况下，每一行只替换第一次出现</span><br><span class="line">c #全局替换，每次替换前询问</span><br><span class="line"></span><br><span class="line">查找替换中的分隔符/可替换为其它字符，如：#,@</span><br><span class="line">范例：</span><br><span class="line">s@/etc@/var@g</span><br><span class="line">s#/boot#/#i</span><br><span class="line"></span><br><span class="line">显示行号：set number，简写 set nu</span><br><span class="line">取消显示：set nonumber, 简写 set nonu</span><br><span class="line"></span><br><span class="line">自动缩进 启用：set autoindent，简写 set ai</span><br><span class="line">               禁用：set noai</span><br><span class="line"></span><br><span class="line">加密：</span><br><span class="line">启用： set key=要设置的密码</span><br><span class="line">禁用： set key=       （什么都不写）</span><br><span class="line"></span><br><span class="line">设置标尺</span><br><span class="line">启用：set cursorline，简写 set cul</span><br><span class="line">禁用：set nocursorline，简写set nocul</span><br><span class="line"></span><br><span class="line">set帮助：set all</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116172650986.png" alt="image-20231116172650986"></p>
+<h2 id="3-关机重启命令"><a href="#3-关机重启命令" class="headerlink" title="3.关机重启命令"></a>3.关机重启命令</h2><h3 id="1）将数据由内存同步到硬盘中"><a href="#1）将数据由内存同步到硬盘中" class="headerlink" title="1）将数据由内存同步到硬盘中"></a>1）将数据由内存同步到硬盘中</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2）重启"><a href="#2）重启" class="headerlink" title="2）重启"></a>2）重启</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">reboot</span><br><span class="line">#两者作用一样</span><br><span class="line">shutdown -r now</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3）关机"><a href="#3）关机" class="headerlink" title="3）关机"></a>3）关机</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">shutdown -h now 关闭系统</span><br><span class="line">init 0 关闭系统</span><br><span class="line">telinit 0 关闭系统</span><br><span class="line">shutdown -h hours:minutes &amp; 按预定时间关闭系统 </span><br><span class="line">shutdown -c 取消按预定时间关闭系统 </span><br><span class="line">logout 注销</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="3-常用命令"><a href="#3-常用命令" class="headerlink" title="3.常用命令"></a>3.常用命令</h2><h3 id="1）pwd显示当前工作目录的绝对路径"><a href="#1）pwd显示当前工作目录的绝对路径" class="headerlink" title="1）pwd显示当前工作目录的绝对路径"></a>1）pwd显示当前工作目录的绝对路径</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pwd</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2）ls列出目录内容"><a href="#2）ls列出目录内容" class="headerlink" title="2）ls列出目录内容"></a>2）ls列出目录内容</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ls       # 仅列出当前目录中的文件和子目录</span><br><span class="line">ls -l    # 以长格式列出当前目录中的文件和子目录，包括隐藏文件和目录</span><br><span class="line">ls -h   # 列出详细信息并以可读大小显示文件大小</span><br><span class="line">ls -a   # 列出所有文件（包括隐藏）的详细信息</span><br><span class="line">ls -t   #按修改时间排序列出文件和子目录</span><br><span class="line">ls -r   #反向排序列出文件和子目录</span><br><span class="line">ls -R   #递归列出当前目录及其子目录中的所有文件和子目录</span><br><span class="line">ls -i   #显示每个文件和目录的inode号码</span><br><span class="line">ls -al  #每行列出的信息依次是：文件类型与权限，链接数，文件属组，文件属组，文件大小用byte表示，建立或最近修改的时间，名字</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3）cd切换目录"><a href="#3）cd切换目录" class="headerlink" title="3）cd切换目录"></a>3）cd切换目录</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116202024153.png" alt="image-20231116202024153"></p>
+<h3 id="4）创建新目录、删除一个空目录"><a href="#4）创建新目录、删除一个空目录" class="headerlink" title="4）创建新目录、删除一个空目录"></a>4）创建新目录、删除一个空目录</h3><p>mkdir【选项】要创建的目录</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mkdir xiyou</span><br><span class="line">mkdir -p xiyou/dssz/meihouwang # -p 创建多层目录</span><br></pre></td></tr></table></figure></div>
+
+<p>rmdir要删除的空目录</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rmdir xiyou/dssz/meihouwang</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5）touch创建空文件"><a href="#5）touch创建空文件" class="headerlink" title="5）touch创建空文件"></a>5）touch创建空文件</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># 语法</span><br><span class="line">touch 文件名</span><br><span class="line"># 实例</span><br><span class="line">touch abc.txt</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="6）cp复制文件或目录"><a href="#6）cp复制文件或目录" class="headerlink" title="6）cp复制文件或目录"></a>6）cp复制文件或目录</h3><p>格式：cp 源文件 目标文件</p>
+<ul>
+<li><p>复制文件</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp xiyou/dssz/suwukong.txt xiyou/mingjie</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>递归复制改整整个文件夹</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cp -r xiyou/dssz/ ./</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h3 id="7-rm删除"><a href="#7-rm删除" class="headerlink" title="7)rm删除"></a>7)rm删除</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">rm sunwukong.txt #删除文件</span><br><span class="line">rm -rf dssz/     #递归删除目录中所有内容</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="8）mv移动文件与目录或重命名"><a href="#8）mv移动文件与目录或重命名" class="headerlink" title="8）mv移动文件与目录或重命名"></a>8）mv移动文件与目录或重命名</h3><p>格式：mv 源文件 目标文件</p>
+<ul>
+<li>mv oldNameFile newNameFile(功能描述：重命名)</li>
+<li>mv &#x2F;temp&#x2F;movefile&#x2F;targetFolder(功能描述：移动文件)</li>
+</ul>
+<h3 id="9）cat查看文件内容"><a href="#9）cat查看文件内容" class="headerlink" title="9）cat查看文件内容"></a>9）cat查看文件内容</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat -n houge.txt # -n参数显示行号</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="10）more文件内容分屏查看器"><a href="#10）more文件内容分屏查看器" class="headerlink" title="10）more文件内容分屏查看器"></a>10）more文件内容分屏查看器</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116203319737.png" alt="image-20231116203319737"></p>
+<h3 id="11）less分屏显示文件内容"><a href="#11）less分屏显示文件内容" class="headerlink" title="11）less分屏显示文件内容"></a>11）less分屏显示文件内容</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116203407009.png" alt="image-20231116203407009"></p>
+<h3 id="12）echo输出内容到控制台"><a href="#12）echo输出内容到控制台" class="headerlink" title="12）echo输出内容到控制台"></a>12）echo输出内容到控制台</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116203443660.png" alt="image-20231116203443660"></p>
+<h3 id="13）tail输出文件尾部内容"><a href="#13）tail输出文件尾部内容" class="headerlink" title="13）tail输出文件尾部内容"></a>13）tail输出文件尾部内容</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116203530682.png" alt="image-20231116203530682"></p>
+<h3 id="14）-输出重定向和-追加"><a href="#14）-输出重定向和-追加" class="headerlink" title="14）&gt;输出重定向和&gt;&gt;追加"></a>14）&gt;输出重定向和&gt;&gt;追加</h3><ul>
+<li><p>将ls查看信息写入到文件中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l&gt;houge.txt</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>将ls查看信息追加到文件中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ls -l&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>采用echo将hello单词追加到文件中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">echo hello&gt;&gt;houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+<h3 id="15）ln软链接"><a href="#15）ln软链接" class="headerlink" title="15）ln软链接"></a>15）ln软链接</h3><p>软链接也称符号链接，类似于Windows里的快捷方式，有自己的数据块，主要存放了链接其他文件的路径。</p>
+<p>格式：ln -s 【原文件或目录】【软链接名】（功能描述：给原文件创建一个软链接）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ln -s /home/lnTest.txt ./lnText</span><br></pre></td></tr></table></figure></div>
+
+<p>删除软链接：rm -rf 软链接名</p>
+<p>如果使用rm -rf 软链接名&#x2F;删除，会把软链接对应的真实目录下内容删掉</p>
+<h3 id="16）查看历史使用命令"><a href="#16）查看历史使用命令" class="headerlink" title="16）查看历史使用命令"></a>16）查看历史使用命令</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">history</span><br><span class="line">history -c</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="17）开启-关闭network（网络）服务的自启自动"><a href="#17）开启-关闭network（网络）服务的自启自动" class="headerlink" title="17）开启&#x2F;关闭network（网络）服务的自启自动"></a>17）开启&#x2F;关闭network（网络）服务的自启自动</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">chkconfig network on #开启</span><br><span class="line">chkconfig network off #关闭</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="18）防火墙常用命令"><a href="#18）防火墙常用命令" class="headerlink" title="18）防火墙常用命令"></a>18）防火墙常用命令</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">systemctl status firewalld #查看防火墙状态</span><br><span class="line">systemctl start firewalld  #开启防火墙</span><br><span class="line">systemctl stop firewald  #关闭防火墙</span><br><span class="line">systemctl enable firewalld.service #开机自启动防火墙</span><br><span class="line">systemctl disable firewalld.service #开机不自启动防火墙</span><br><span class="line">firewall-cmd --zone=public --add-port=10002/tcp --permanent #开启端口</span><br><span class="line"># 命令含义：</span><br><span class="line">–zone #作用域</span><br><span class="line">–add-port=80/tcp #添加端口，格式为：端口/通讯协议</span><br><span class="line">–permanent #永久生效，没有此参数重启后失效( —permanent放在前面与后面都行)</span><br><span class="line"></span><br><span class="line">firewall-cmd --reload  #重启防火墙</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure></div>
+
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="post-我的博客-6" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -823,6 +935,10 @@
       <ul>
         
           <li>
+            <a href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/">第7天学习笔记</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-6/">第6天学习笔记</a>
           </li>
         
@@ -836,10 +952,6 @@
         
           <li>
             <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/">第3天学习笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-2/">第1天学习笔记</a>
           </li>
         
       </ul>
