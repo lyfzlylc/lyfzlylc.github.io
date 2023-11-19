@@ -59,6 +59,157 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="post-我的博客-8" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/">第8天学习笔记</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/" class="article-date">
+  <time datetime="2023-11-17T09:30:22.000Z" itemprop="datePublished">2023-11-17</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="用户管理命令"><a href="#用户管理命令" class="headerlink" title="用户管理命令"></a>用户管理命令</h2><h3 id="1-useradd添加新用户"><a href="#1-useradd添加新用户" class="headerlink" title="1.useradd添加新用户"></a>1.useradd添加新用户</h3><p>useradd 用户名（功能描述：添加新用户）</p>
+<p>useradd -g 组名 用户名（功能描述：添加新用户到某个组）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">useradd hmb</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-passwd设置用户密码"><a href="#2-passwd设置用户密码" class="headerlink" title="2.passwd设置用户密码"></a>2.passwd设置用户密码</h3><p>passwd 用户名（功能描述：设置用户密码）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">passwd hmb</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-id查看用户是否存在"><a href="#3-id查看用户是否存在" class="headerlink" title="3.id查看用户是否存在"></a>3.id查看用户是否存在</h3><p>id 用户名</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">id hmb</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="4-cat-ect-passwd-查看创建了哪些用户"><a href="#4-cat-ect-passwd-查看创建了哪些用户" class="headerlink" title="4.cat&#x2F;ect&#x2F;passwd 查看创建了哪些用户"></a>4.cat&#x2F;ect&#x2F;passwd 查看创建了哪些用户</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/passwd</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-su-切换用户"><a href="#5-su-切换用户" class="headerlink" title="5.su 切换用户"></a>5.su 切换用户</h3><p>su 用户名称 （功能描述：切换用户，只能获得用户的执行权限，不能获得环境变量）</p>
+<p>su - 用户名称 （功能描述：切换到用户并获得该用户的环境变量及执行权限）</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">su hmb</span><br><span class="line">su - hmb</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1699546145631-d0ecd87c-64b8-48b7-8265-7bbbb364d543.png" alt="88c829925a934515bd1e0f63be523fb3.png"></p>
+<h3 id="6-userdel-删除用户"><a href="#6-userdel-删除用户" class="headerlink" title="6.userdel 删除用户"></a>6.userdel 删除用户</h3><p>（1）userdel 用户名 （功能描述：删除用户但保存用户主目录）</p>
+<p>（2）userdel -r 用户名 （功能描述：用户和用户主目录，都删除）</p>
+<h3 id="7-sudo-设置普通用户具有-root-权限"><a href="#7-sudo-设置普通用户具有-root-权限" class="headerlink" title="7.sudo 设置普通用户具有 root 权限"></a>7.sudo 设置普通用户具有 root 权限</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">sudo 需要执行的命令</span><br><span class="line">usermod -a -G sudo 用户名</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="8-usermod-修改用户"><a href="#8-usermod-修改用户" class="headerlink" title="8.usermod 修改用户"></a>8.usermod 修改用户</h3><p>usermod -g 用户组 用户名</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">-a:仅和-G一块使用，将用户添加到附属组群。</span><br><span class="line">-d:修改用户登入时的目录，例如一般的用户登录时，默认进入预先设定的主目录，某些时候为了方便登录时就需要进入比较复杂的路径时，可以使用这个选项设置进入时目录。</span><br><span class="line">-g:修改用户所属群组。</span><br><span class="line">-G:修改用户所属的附加群组；在改变用户sudo权限时就可以使用这个选项。</span><br><span class="line">-s:修改用户登录后所使用的shell版本</span><br></pre></td></tr></table></figure></div>
+
+<p>（1）将用户加入到用户组  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">usermod -g root zhubajie</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="9-groupadd-新增组"><a href="#9-groupadd-新增组" class="headerlink" title="9.groupadd 新增组"></a>9.groupadd 新增组</h3><p>groupadd 组名</p>
+<p>（1）添加一个xitianqujing组</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupadd xitianqujing</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="10-groupdel-删除组"><a href="#10-groupdel-删除组" class="headerlink" title="10.groupdel 删除组"></a>10.groupdel 删除组</h3><p>groupdel 组名</p>
+<p>（1）删除xitianqujing组</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupdel xitianqujing</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="11-groupmod-修改组"><a href="#11-groupmod-修改组" class="headerlink" title="11.groupmod 修改组"></a>11.groupmod 修改组</h3><p>groupmod -n 新组名 老组名</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">groupmod -n xitian xitianqujing</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="12-cat-etc-group-查看创建了哪些组"><a href="#12-cat-etc-group-查看创建了哪些组" class="headerlink" title="12.cat &#x2F;etc&#x2F;group 查看创建了哪些组"></a>12.cat &#x2F;etc&#x2F;group 查看创建了哪些组</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /etc/group</span><br></pre></td></tr></table></figure></div>
+
+<h2 id="文件权限类"><a href="#文件权限类" class="headerlink" title="文件权限类"></a>文件权限类</h2><h3 id="1-文件属性"><a href="#1-文件属性" class="headerlink" title="1.文件属性"></a>1.文件属性</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1699546253488-a7c2cb39-5083-4700-9aae-a3a62e94995d.png" alt="a53a7e475a8b4c1794420f9397ba492c.png"></p>
+<p>使用ll或 ls -lh命令查看权限</p>
+<p>如果没有权限，就会出现减号[ - ]而已。从左至右用0-9这些数字来表示:</p>
+<p>​    0 首位表示类型</p>
+<p>​        在Linux中第一个字符代表这个文件是目录、文件或链接文件等等</p>
+<p>​        代表文件</p>
+<p>​        d 代表目录</p>
+<p>​        l 链接文档(link file)；</p>
+<p>​    第1-3位确定属主（该文件的所有者）拥有该文件的权限。—User</p>
+<p>​    第4-6位确定属组（所有者的同组用户）拥有该文件的权限，—Group</p>
+<p>​    第7-9位确定其他用户拥有该文件的权限 —Other</p>
+<p>（1）、rwx 作用文件和目录的不同解释</p>
+<p>​    （1）作用到文件：</p>
+<p>​    [ r ]代表可读(read): 可以读取，查看</p>
+<p>​    [ w ]代表可写(write): 可以修改，但是不代表可以删除该文件，删除一个文件的前</p>
+<p>​    [ x ]代表可执行(execute):可以被系统执行</p>
+<p>​    （2）作用到目录：</p>
+<p>​    [ r ]代表可读(read): 可以读取，ls查看目录内容</p>
+<p>​    [ w ]代表可写(write): 可以修改，目录内创建+删除+重命名目录</p>
+<p>​    [ x ]代表可执行(execute):可以进入该目录</p>
+<p>ll命令查看解释  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1699546284508-c5191bd7-3f55-498c-950b-b1fc44c8d519.png" alt="214b0af294ca4b2ebc18ee223b0ce72f.png"></p>
+<p>ls -lh 命令，文件大小会更清晰  </p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1699546293928-beb8d2c0-c84d-41ee-a1cb-dc4f1764cf96.png" alt="3c553450ad204c27b091537a1c2e7298.png"></p>
+<p>（1）如果查看到是文件：链接数指的是硬链接个数。<br>（2）如果查看的是文件夹：链接数指的是子文件夹个数。</p>
+<h3 id="2-chmod-改变权限"><a href="#2-chmod-改变权限" class="headerlink" title="2.chmod 改变权限"></a>2.chmod 改变权限</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1699546303978-836b85e3-aa18-4b86-84d3-7e3eb5ca29b7.png" alt="099b2191769f4d4da5208983fe2d160e.png"></p>
+<ul>
+<li><p><strong>第一种方式变更权限</strong></p>
+<p>chmod [{ugoa}{+ - &#x3D;}{rwx}] 文件或目录</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">u:所有者（user）        g:所有组(group)           o:其他人(other)        a:所有人(u、g、o 的总和)</span><br><span class="line"></span><br><span class="line">+号代表增加      -号代表取消     = 号代表直接赋予</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><p>（1）修改文件使其所属主用户具有执行权限</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u+x houge.txt</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>(2）修改文件使其所属组用户具有执行权限</p>
+</li>
+</ul>
+  <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod g+x houge.txt</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><p>（3）修改文件所属主用户执行权限,并使其他用户具有执行权限</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod u-x,o+x houge.txt</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li><p><strong>第二种方式变更权限</strong></p>
+<p>chmod [mode&#x3D;421 ] [文件或目录]</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">r=4         w=2        x=1       rwx=4+2+1=7</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li><p>（1）采用数字的方式，设置文件所有者、所属组、其他用户都具有可读可写可执行权限</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod 777 houge.txt</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>（2）修改整个文件夹里面的所有文件的所有者、所属组、其他用户都具有可读可写可执行权限。  </p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod -R 777 xiyou/</span><br></pre></td></tr></table></figure></div></li>
+</ul>
+</li>
+<li><p><strong>chown 改变所有者</strong></p>
+<p>chown [选项] [最终用户] [文件或目录] （功能描述：改变文件或者目录的所有者）</p>
+<ul>
+<li>（1）修改文件所有者</li>
+</ul>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown hmb houge.txt</span><br></pre></td></tr></table></figure></div>
+
+<ul>
+<li>(2）递归改变文件所有者和所有组</li>
+</ul>
+  <div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chown -R hmb:hmb xiyou/</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p><strong>chgrp 改变所属组</strong></p>
+</li>
+</ul>
+<p>chgrp [最终用户组] [文件或目录] （功能描述：改变文件或者目录的所属组）</p>
+<p>（1）修改文件的所属组</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chgrp root houge.txt</span><br></pre></td></tr></table></figure></div>
+
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="post-我的博客-7" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -91,12 +242,10 @@
 <p>hostname查看主机名、whoami查看用户名</p>
 <h3 id="vi的三种模式"><a href="#vi的三种模式" class="headerlink" title="vi的三种模式"></a>vi的三种模式</h3><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img360%E6%88%AA%E5%9B%BE184910048810592.png" alt="360截图184910048810592"></p>
 <h4 id="1-一般模式"><a href="#1-一般模式" class="headerlink" title="1.一般模式"></a>1.一般模式</h4><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116192909427.png" alt="image-20231116192909427"></p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line">命令模式：此模式下，可使用方向键（上、下、左、右键）或 k、j、h、i 移动光标的位置，还可以对文件内容进行复制、粘贴、替换、删除等操作。</span><br><span class="line">行间跳转：</span><br><span class="line"></span><br><span class="line">G:     最后一行</span><br><span class="line">gg:    第一行</span><br><span class="line">1G：第一行</span><br><span class="line">10G：跳转到第十行</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">删除命令</span><br><span class="line">d 删除命令，可结合光标跳转字符，实现范围删除</span><br><span class="line">d$ 删除到行尾</span><br><span class="line">d^ 删除到非空行首</span><br><span class="line">d0 删除到行首</span><br><span class="line">dw 下一个单词的词首</span><br><span class="line">de 当前或下一个单词的词尾</span><br><span class="line">db 当前或上一个单词的词首</span><br><span class="line"></span><br><span class="line">x 删除一个字符</span><br><span class="line"></span><br><span class="line">dd  剪切光标所在的行  </span><br><span class="line">#dd 多行删除        </span><br><span class="line"></span><br><span class="line">复制命令</span><br><span class="line">yy   复制行</span><br><span class="line">#yy 复制多行</span><br><span class="line"></span><br><span class="line">粘贴命令</span><br><span class="line">p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面</span><br><span class="line">P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的前面</span><br><span class="line"></span><br><span class="line">行内</span><br><span class="line">^ 跳转至行首的第一个非空白字符</span><br><span class="line">0 跳转至行首</span><br><span class="line">$ 跳转至行尾</span><br><span class="line"></span><br><span class="line">命令模式翻屏操作</span><br><span class="line">Ctrl+f 向文件尾部翻一屏,相当于Pagedown</span><br><span class="line">Ctrl+b 向文件首部翻一屏,相当于Pageup</span><br><span class="line">Ctrl+d 向文件尾部翻半屏</span><br><span class="line">Ctrl+u 向文件首部翻半屏</span><br><span class="line"></span><br><span class="line">替换命令</span><br><span class="line">r 只替换光标所在处的一个字符</span><br><span class="line"></span><br><span class="line">撤消更改</span><br><span class="line">u 撤销最近的更改，相当于windows中ctrl+z</span><br><span class="line">#u 撤销之前多次更改</span><br><span class="line">U 撤消光标落在这行后所有此行的更改</span><br><span class="line">Ctrl-r 重做最后的“撤消”更改，相当于windows中crtl+y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">. 重复前一个操作</span><br><span class="line">#. 重复前一个操作#次</span><br><span class="line"></span><br><span class="line">~ 转换大小写</span><br></pre></td></tr></table></figure></div>
-
 <h4 id="2）编辑模式"><a href="#2）编辑模式" class="headerlink" title="2）编辑模式"></a>2）编辑模式</h4><p>输入模式: 使 Vim 进行输入模式的方式是在命令模式状态下输入 i、I、a、A、o、O 等插入命令，当编辑文件完成后按 Esc 键即可返回命令模式。</p>
 <p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116172426432.png" alt="image-20231116172426432"></p>
 <h4 id="3）命令模式"><a href="#3）命令模式" class="headerlink" title="3）命令模式"></a>3）命令模式</h4><p>末行模式：文件中的指定内容执行保存、查找或替换等操作。使 Vim 切换到编辑模式的方法是在命令模式状态下按“：”（英文冒号）键，此时 Vim 窗口的左下方出现一个“：”符号，这是就可以输入相关指令进行操作了。</p>
-<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line">基础命令</span><br><span class="line">#               具体第#行，例如2表示第2行</span><br><span class="line">#,#            从左侧#表示起始行，到右侧#表示结尾行 </span><br><span class="line">#,+#          从左侧#表示的起始行，加上右侧#表示的行数，范例：2,+3 表示2到5行</span><br><span class="line">.                当前行</span><br><span class="line">$               最后一行</span><br><span class="line">.,$-1          当前行到倒数第二行</span><br><span class="line">%              全文, 相当于1,$</span><br><span class="line"></span><br><span class="line">查找并替换</span><br><span class="line">格式： 范围  s/要查找的内容/替换的内容/g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line">要查找的内容：可使用基本正则表达式模式   </span><br><span class="line">替换为的内容：不能使用模式，但可以使用\1, \2, ...等后向引用符号；还可以使用“&amp;”引用前面查找时查</span><br><span class="line">找到的整个内容</span><br><span class="line"></span><br><span class="line">修饰符：</span><br><span class="line">i #忽略大小写</span><br><span class="line">g #全局替换，默认情况下，每一行只替换第一次出现</span><br><span class="line">c #全局替换，每次替换前询问</span><br><span class="line"></span><br><span class="line">查找替换中的分隔符/可替换为其它字符，如：#,@</span><br><span class="line">范例：</span><br><span class="line">s@/etc@/var@g</span><br><span class="line">s#/boot#/#i</span><br><span class="line"></span><br><span class="line">显示行号：set number，简写 set nu</span><br><span class="line">取消显示：set nonumber, 简写 set nonu</span><br><span class="line"></span><br><span class="line">自动缩进 启用：set autoindent，简写 set ai</span><br><span class="line">               禁用：set noai</span><br><span class="line"></span><br><span class="line">加密：</span><br><span class="line">启用： set key=要设置的密码</span><br><span class="line">禁用： set key=       （什么都不写）</span><br><span class="line"></span><br><span class="line">设置标尺</span><br><span class="line">启用：set cursorline，简写 set cul</span><br><span class="line">禁用：set nocursorline，简写set nocul</span><br><span class="line"></span><br><span class="line">set帮助：set all</span><br></pre></td></tr></table></figure></div>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br></pre></td><td class="code"><pre><span class="line">命令模式：此模式下，可使用方向键（上、下、左、右键）或 k、j、h、i 移动光标的位置，还可以对文件内容进行复制、粘贴、替换、删除等操作。</span><br><span class="line">行间跳转：</span><br><span class="line"></span><br><span class="line">G:     最后一行</span><br><span class="line">gg:    第一行</span><br><span class="line">1G：第一行</span><br><span class="line">10G：跳转到第十行</span><br><span class="line"> </span><br><span class="line"></span><br><span class="line">删除命令</span><br><span class="line">d 删除命令，可结合光标跳转字符，实现范围删除</span><br><span class="line">d$ 删除到行尾</span><br><span class="line">d^ 删除到非空行首</span><br><span class="line">d0 删除到行首</span><br><span class="line">dw 下一个单词的词首</span><br><span class="line">de 当前或下一个单词的词尾</span><br><span class="line">db 当前或上一个单词的词首</span><br><span class="line"></span><br><span class="line">x 删除一个字符</span><br><span class="line"></span><br><span class="line">dd  剪切光标所在的行  </span><br><span class="line">#dd 多行删除        </span><br><span class="line"></span><br><span class="line">复制命令</span><br><span class="line">yy   复制行</span><br><span class="line">#yy 复制多行</span><br><span class="line"></span><br><span class="line">粘贴命令</span><br><span class="line">p 缓冲区存的如果为整行，则粘贴当前光标所在行的下方；否则，则粘贴至当前光标所在处的后面</span><br><span class="line">P 缓冲区存的如果为整行，则粘贴当前光标所在行的上方；否则，则粘贴至当前光标所在处的前面</span><br><span class="line"></span><br><span class="line">行内</span><br><span class="line">^ 跳转至行首的第一个非空白字符</span><br><span class="line">0 跳转至行首</span><br><span class="line">$ 跳转至行尾</span><br><span class="line"></span><br><span class="line">命令模式翻屏操作</span><br><span class="line">Ctrl+f 向文件尾部翻一屏,相当于Pagedown</span><br><span class="line">Ctrl+b 向文件首部翻一屏,相当于Pageup</span><br><span class="line">Ctrl+d 向文件尾部翻半屏</span><br><span class="line">Ctrl+u 向文件首部翻半屏</span><br><span class="line"></span><br><span class="line">替换命令</span><br><span class="line">r 只替换光标所在处的一个字符</span><br><span class="line"></span><br><span class="line">撤消更改</span><br><span class="line">u 撤销最近的更改，相当于windows中ctrl+z</span><br><span class="line">#u 撤销之前多次更改</span><br><span class="line">U 撤消光标落在这行后所有此行的更改</span><br><span class="line">Ctrl-r 重做最后的“撤消”更改，相当于windows中crtl+y</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">. 重复前一个操作</span><br><span class="line">#. 重复前一个操作#次</span><br><span class="line"></span><br><span class="line">~ 转换大小写</span><br><span class="line">基础命令</span><br><span class="line">#               具体第#行，例如2表示第2行</span><br><span class="line">#,#            从左侧#表示起始行，到右侧#表示结尾行 </span><br><span class="line">#,+#          从左侧#表示的起始行，加上右侧#表示的行数，范例：2,+3 表示2到5行</span><br><span class="line">.                当前行</span><br><span class="line">$               最后一行</span><br><span class="line">.,$-1          当前行到倒数第二行</span><br><span class="line">%              全文, 相当于1,$</span><br><span class="line"></span><br><span class="line">查找并替换</span><br><span class="line">格式： 范围  s/要查找的内容/替换的内容/g</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">说明：</span><br><span class="line">要查找的内容：可使用基本正则表达式模式   </span><br><span class="line">替换为的内容：不能使用模式，但可以使用\1, \2, ...等后向引用符号；还可以使用“&amp;”引用前面查找时查</span><br><span class="line">找到的整个内容</span><br><span class="line"></span><br><span class="line">修饰符：</span><br><span class="line">i #忽略大小写</span><br><span class="line">g #全局替换，默认情况下，每一行只替换第一次出现</span><br><span class="line">c #全局替换，每次替换前询问</span><br><span class="line"></span><br><span class="line">查找替换中的分隔符/可替换为其它字符，如：#,@</span><br><span class="line">范例：</span><br><span class="line">s@/etc@/var@g</span><br><span class="line">s#/boot#/#i</span><br><span class="line"></span><br><span class="line">显示行号：set number，简写 set nu</span><br><span class="line">取消显示：set nonumber, 简写 set nonu</span><br><span class="line"></span><br><span class="line">自动缩进 启用：set autoindent，简写 set ai</span><br><span class="line">               禁用：set noai</span><br><span class="line"></span><br><span class="line">加密：</span><br><span class="line">启用： set key=要设置的密码</span><br><span class="line">禁用： set key=       （什么都不写）</span><br><span class="line"></span><br><span class="line">设置标尺</span><br><span class="line">启用：set cursorline，简写 set cul</span><br><span class="line">禁用：set nocursorline，简写set nocul</span><br><span class="line"></span><br><span class="line">set帮助：set all</span><br></pre></td></tr></table></figure></div>
 
 <p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231116172650986.png" alt="image-20231116172650986"></p>
 <h2 id="3-关机重启命令"><a href="#3-关机重启命令" class="headerlink" title="3.关机重启命令"></a>3.关机重启命令</h2><h3 id="1）将数据由内存同步到硬盘中"><a href="#1）将数据由内存同步到硬盘中" class="headerlink" title="1）将数据由内存同步到硬盘中"></a>1）将数据由内存同步到硬盘中</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sync</span><br></pre></td></tr></table></figure></div>
@@ -510,7 +659,7 @@
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-2/">第1天学习笔记</a>
+      <a class="article-title" href="/2023/11/08/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-2/">第2天学习笔记</a>
     </h1>
   
 
@@ -935,6 +1084,10 @@
       <ul>
         
           <li>
+            <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/">第8天学习笔记</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/">第7天学习笔记</a>
           </li>
         
@@ -948,10 +1101,6 @@
         
           <li>
             <a href="/2023/11/10/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-4/">第4天学习笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/">第3天学习笔记</a>
           </li>
         
       </ul>
