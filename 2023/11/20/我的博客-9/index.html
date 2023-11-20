@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>第9天学习笔记 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="centos7搭建lamp若下载的centos7位minimal版本，建议使用远程登录，进行操作。 12在虚拟机内使用ifconfig获取ip地址ssh 用户名@虚拟机ip &#x2F;&#x2F;主机win+R，输入cmd进入控制台，输入命令，进行远程登录   1.m -f &#x2F;var&#x2F;run&#x2F;yum.pid     清理睡眠状态1234567891011121314151617rm -">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第9天学习笔记">
+<meta property="og:url" content="http://example.com/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="centos7搭建lamp若下载的centos7位minimal版本，建议使用远程登录，进行操作。 12在虚拟机内使用ifconfig获取ip地址ssh 用户名@虚拟机ip &#x2F;&#x2F;主机win+R，输入cmd进入控制台，输入命令，进行远程登录   1.m -f &#x2F;var&#x2F;run&#x2F;yum.pid     清理睡眠状态1234567891011121314151617rm -">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231120203224349.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgd7eaed314435465bb9deed3c4c6d6645.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1ad00a6cfdea41f7b7b70f17f4e12a8f.png">
+<meta property="article:published_time" content="2023-11-20T09:30:22.000Z">
+<meta property="article:modified_time" content="2023-11-20T12:56:49.195Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231120203224349.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/3.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" style="background-image: url(/images/13.jpg)" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-我的博客-9" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      第9天学习笔记
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/" class="article-date">
+  <time datetime="2023-11-20T09:30:22.000Z" itemprop="datePublished">2023-11-20</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="centos7搭建lamp"><a href="#centos7搭建lamp" class="headerlink" title="centos7搭建lamp"></a>centos7搭建lamp</h2><p>若下载的centos7位minimal版本，建议使用远程登录，进行操作。</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">在虚拟机内使用ifconfig获取ip地址</span><br><span class="line">ssh 用户名@虚拟机ip //主机win+R，输入cmd进入控制台，输入命令，进行远程登录</span><br></pre></td></tr></table></figure></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231120203224349.png" alt="image-20231120203224349"></p>
+<h3 id="1-m-f-var-run-yum-pid-清理睡眠状态"><a href="#1-m-f-var-run-yum-pid-清理睡眠状态" class="headerlink" title="1.m -f &#x2F;var&#x2F;run&#x2F;yum.pid     清理睡眠状态"></a>1.m -f &#x2F;var&#x2F;run&#x2F;yum.pid     清理睡眠状态</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">rm -f /var/run/yum.pid</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=3306/tcp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=3306/udp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=80/tcp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=80/udp</span><br><span class="line">firewall-cmd --reload</span><br><span class="line">vi /etc/selinux/config      #将SELINUX=enforcing这一行修改为SELINUX=disabled</span><br><span class="line">reboot</span><br><span class="line">yum remove mariadb-libs.x86_64</span><br><span class="line">yum install httpd -y</span><br><span class="line">systemctl enable httpd</span><br><span class="line">systemctl restart httpd</span><br><span class="line">systemctl status httpd</span><br><span class="line">yum -y install mariadb mariadb-server</span><br><span class="line">systemctl enable mariadb</span><br><span class="line">systemctl start mariadb</span><br><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="2-开放防火墙"><a href="#2-开放防火墙" class="headerlink" title="2.开放防火墙"></a>2.开放防火墙</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">firewall-cmd --permanent --zone=public --add-port=3306/tcp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=3306/udp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=80/tcp</span><br><span class="line">firewall-cmd --permanent --zone=public --add-port=80/udp</span><br><span class="line">firewall-cmd --reload</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-关闭selinux"><a href="#3-关闭selinux" class="headerlink" title="3.关闭selinux"></a>3.关闭selinux</h3><p>vi &#x2F;etc&#x2F;selinux&#x2F;config<br>将SELINUX&#x3D;enforcing这一行修改为SELINUX&#x3D;disabled</p>
+<h3 id="4-reboot"><a href="#4-reboot" class="headerlink" title="4.reboot"></a>4.reboot</h3><h3 id="5-删除默认数据库"><a href="#5-删除默认数据库" class="headerlink" title="5.删除默认数据库"></a>5.删除默认数据库</h3><p>rpm -qa | grep mariadb 查找出默认数据库mariadb的包名。<br>yum remove mariadb-libs.x86_64    删除</p>
+<h3 id="6"><a href="#6" class="headerlink" title="6."></a>6.</h3><p>yum install httpd -y</p>
+<p>systemctl enable httpd<br>systemctl restart httpd<br>systemctl status httpd           &#x2F;&#x2F;查看服务状态<br>此时访问成功回显apache测试页，网站根目录&#x2F;var&#x2F;www&#x2F;html</p>
+<h3 id="7-安装mysql"><a href="#7-安装mysql" class="headerlink" title="7.安装mysql"></a>7.安装mysql</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">yum -y install mariadb mariadb-server</span><br><span class="line">systemctl enable mariadb</span><br><span class="line">systemctl start mariadb</span><br><span class="line">mysql_secure_installation</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="8"><a href="#8" class="headerlink" title="8."></a>8.</h3><p>Enter current password for root (enter for none):&lt;–初次运行直接回车Set root password? [Y&#x2F;n]&lt;– 是否设置root用户密码，输入y并回车或直接回车<br>New password:&lt;– 设置root用户的密码<br>Re-enter new password:&lt;– 再输入一次你设置的密码<br>其他配置<br>Remove anonymous users? [Y&#x2F;n]&lt;– 是否删除匿名用户，回车<br>Disallow root login remotely? [Y&#x2F;n]&lt;–是否禁止root远程登录,回车,<br>Remove test database and access to it? [Y&#x2F;n]&lt;– 是否删除test数据库，回车<br>Reload privilege tables now? [Y&#x2F;n]&lt;– 是否重新加载权限表，回车<br>初始化MariaDB完成，接下来测试登录<br>mysql -uroot -p你的密码<br>GRANT ALL PRIVILEGES ON <em>.</em> TO ‘root‘@’%’ IDENTIFIED BY ‘你的密码的明文’ WITH GRANT OPTION;   </p>
+<p> FLUSH PRIVILEGES;                  远程登陆</p>
+<p>完成。</p>
+<h3 id="9-php安装"><a href="#9-php安装" class="headerlink" title="9.php安装"></a>9.php安装</h3><ul>
+<li>rpm -Uvh <a target="_blank" rel="noopener" href="https://mirror.webtatic.com/yum/el7/webtatic-release.rpm">https://mirror.webtatic.com/yum/el7/webtatic-release.rpm</a></li>
+<li>yum -y remove php*</li>
+<li>yum -y install php72w php72w-cli php72w-fpm php72w-common php72w-devel php72w-embedded php72w-gd php72w-mbstring php72w-mysqlnd php72w-opcache php72w-pdo php72w-xml</li>
+<li>systemctl enable php-fpm.service<br>systemctl start php-fpm.service</li>
+</ul>
+<h3 id="10-配置Apache解析php文件并自动关联"><a href="#10-配置Apache解析php文件并自动关联" class="headerlink" title="10. 配置Apache解析php文件并自动关联"></a>10. 配置Apache解析php文件并自动关联</h3><ul>
+<li><p>vi &#x2F;etc&#x2F;httpd&#x2F;conf&#x2F;httpd.conf</p>
+</li>
+<li><p>找到：DirectoryIndex index.html改为：DirectoryIndex index.html index.htm index.php</p>
+</li>
+<li><p>找到：AddType application&#x2F;x-gzip .gz .tgz在该行下面添加：AddType application&#x2F;x-httpd-php .php</p>
+</li>
+<li><p>重启Apache：systemctl restart httpd(输入ip显示如下)</p>
+</li>
+</ul>
+<p>  <img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgd7eaed314435465bb9deed3c4c6d6645.png" alt="在这里插入图片描述"></p>
+<ul>
+<li><p>在浏览器输入服务器IP地址或者绑定的域名访问即可，html文件下是网站主目录，如果是里面有个文件夹才是主目录可以在配置文件修改主目录路径，或者在IP地址访问后面加上文件夹名字。</p>
+</li>
+<li><p>编写文件</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">cd /var/www/html</span><br><span class="line">ls</span><br><span class="line">vim index.php</span><br><span class="line">填写内容：</span><br><span class="line">&lt;?php</span><br><span class="line">phpinfo();</span><br><span class="line">?&gt;</span><br><span class="line">：wq退出</span><br><span class="line">pwd</span><br><span class="line">ls</span><br><span class="line">cat index.php //查看文件是否编写正确</span><br></pre></td></tr></table></figure></div>
+
+<p>浏览器输入ip地址（本人：192.168.0.72),出现如下界面，则测试成功</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//img1ad00a6cfdea41f7b7b70f17f4e12a8f.png" alt="在这里插入图片描述"></p>
+</li>
+</ul>
+<h3 id="11-将之前写好的WWW文件打包压缩到根目录下"><a href="#11-将之前写好的WWW文件打包压缩到根目录下" class="headerlink" title="11.将之前写好的WWW文件打包压缩到根目录下"></a>11.将之前写好的WWW文件打包压缩到根目录下</h3><p>解压缩到\var\www\html中</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">scp -r .\WWW.zip root@192.168.0.72:\var\www\html\</span><br><span class="line">unzip WWW.zip</span><br></pre></td></tr></table></figure></div>
+
+
+
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">第8天学习笔记</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/3.png" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        volcano
+      
+    </h3>
+    <p class="avatar-slogan">
+      长风破浪会有时 直挂云帆济沧海
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/">第9天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/">第8天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/">第7天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-6/">第6天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-5/">第5天学习笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2023 John Doe &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
