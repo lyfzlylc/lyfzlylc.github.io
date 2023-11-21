@@ -59,6 +59,64 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="post-我的博客-10" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/11/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-10/">第10天学习笔记</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-10/" class="article-date">
+  <time datetime="2023-11-21T09:30:22.000Z" itemprop="datePublished">2023-11-21</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="Docker部署"><a href="#Docker部署" class="headerlink" title="Docker部署"></a>Docker部署</h2><p>Docker守护进程相对于文件的根目录，镜像相对于类，容器为实例</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2</span><br><span class="line"></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.ustc.edu.cn/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo</span><br><span class="line"></span><br><span class="line">安装docker；出现输入的界面都按 y：sudo yum install -y docker-ce</span><br><span class="line"></span><br><span class="line">\# 执行如下命令： </span><br><span class="line">mkdir /etc/docker </span><br><span class="line">vi /etc/docker/daemon.json</span><br><span class="line"></span><br><span class="line">在文件中加入下面内容 ：</span><br><span class="line">&#123;</span><br><span class="line">&quot;registry-mirrors&quot;: [&quot;https://docker.mirrors.ustc.edu.cn&quot;] </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#123;</span><br><span class="line"> &quot;registry-mirrors&quot;:[&quot;https://6kx4zyno.mirror.aliyuncs.com&quot;]</span><br><span class="line">&#125;</span><br><span class="line">退出</span><br><span class="line">：wq</span><br><span class="line">sudo docker images</span><br></pre></td></tr></table></figure></div>
+
+
+
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">查找镜像：docker serach 镜像名</span><br><span class="line"></span><br><span class="line">docker run -id --name=ydl_tomcat -p 8081:8080 -v /root/tomcat:/usr/local/tomcat/webapps tomcat</span><br><span class="line">sudo docker pull php:5.6-fpm</span><br><span class="line">sudo docker pull mysql:5.7</span><br></pre></td></tr></table></figure></div>
+
+
+
+<p>若无法安装，可能是docker版本太低，请卸载重新安装新版本docker<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_41020960/article/details/132451014">具体操作</a></p>
+<p>安装后重复之前操作，再查询docker版本，看是否更新好</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">\# 1、yum 包更新到最新 </span><br><span class="line">sudo yum update </span><br><span class="line">\# 2、作用：安装需要的软件包， yum-util 提供yum-config-manager功能，另外两个是devicemapper驱动依赖的</span><br><span class="line">sudo yum install -y yum-utils device-mapper-persistent-data lvm2 </span><br><span class="line">\# 3、 设置yum源 </span><br><span class="line">\# 3.1、方案一：使用ustc的（推荐） </span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.ustc.edu.cn/docker-ce/linux/centos/docker-ce.repo </span><br><span class="line">\# 3.2、方案二：使用阿里云（可能失败） </span><br><span class="line">sudo yum-config-manager --add-repo http://mirrors.aliyun.com/docker-ce/linux/centos/docker-ce.repo </span><br><span class="line">\# 4、 安装docker；出现输入的界面都按 y </span><br><span class="line">sudo yum install -y docker-ce</span><br><span class="line">\# 5、 查看docker版本 </span><br><span class="line">docker -v</span><br></pre></td></tr></table></figure></div>
+
+
+
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">sudo docker inspect mysql57</span><br><span class="line"></span><br><span class="line">sudo docker run --name mysql57 -v mysql57:/var/lib/mysql -e MYSQL_ROOT_PASSWORD=123456 -p 3306:3306 -d mysql:5.7 //5.7是安装的mysql版本，根据实际情况填写</span><br></pre></td></tr></table></figure></div>
+
+<p>若出现提示端口冲突，请更改端口地址为3307:3306</p>
+<p>更改完成后再重复上述操作，之后</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">若未安装phpmyadmin，先可以执行以下命令下载</span><br><span class="line">docker pull phpmyadmin</span><br><span class="line">查看镜像</span><br><span class="line">docker images</span><br><span class="line">安装成功后执行如下命令</span><br><span class="line">msyql -h 172.17.0.3 -uroot -p123456</span><br><span class="line"></span><br><span class="line">sudo docker exec -it mysql57 bash</span><br><span class="line"></span><br><span class="line">sudo docker run --name phpmyadmin --link mysql57:db -p 9998:80 -d phpmyadmin/phpmyadmin</span><br></pre></td></tr></table></figure></div>
+
+<p>完成所有操作后，在浏览器中输入ip地址：9998，若界面显示如下，则运行成功</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgb36a57c63ebaa30d130a0a98ffae7f7b.png" alt="b36a57c63ebaa30d130a0a98ffae7f7b.png"></p>
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="post-我的博客-9" class="article global-container article-type-post" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -675,20 +733,20 @@
 </article>
 
   
-    <article id="我的博客-我的博客 - 3" class="article global-container article-type-我的博客" itemscope itemprop="blogPost">
+    <article id="我的博客-我的博客-3" class="article global-container article-type-我的博客" itemscope itemprop="blogPost">
   
     <header class="article-header">
       
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/">第3天学习笔记</a>
+      <a class="article-title" href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-3/">第3天学习笔记</a>
     </h1>
   
 
     </header>
   
   <div class="article-meta">
-    <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2%20-%203/" class="article-date">
+    <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-3/" class="article-date">
   <time datetime="2023-11-09T09:20:31.000Z" itemprop="datePublished">2023-11-09</time>
 </a>
     
@@ -1040,41 +1098,6 @@
 </article>
 
   
-    <article id="post-volcano" class="article global-container article-type-post" itemscope itemprop="blogPost">
-  
-    <header class="article-header">
-      
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2023/11/07/volcano/">volcano</a>
-    </h1>
-  
-
-    </header>
-  
-  <div class="article-meta">
-    <a href="/2023/11/07/volcano/" class="article-date">
-  <time datetime="2023-11-07T07:33:44.000Z" itemprop="datePublished">2023-11-07</time>
-</a>
-    
-    
-  </div>
-  
-
-  <div class="article-inner">
-    
-    <div class="article-content article-content-cloud" itemprop="articleBody">
-      
-        
-      
-    </div>
-    
-  </div>
-  
-  
-</article>
-
-  
 
 
   <nav id="page-nav">
@@ -1126,6 +1149,10 @@
       <ul>
         
           <li>
+            <a href="/2023/11/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-10/">第10天学习笔记</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/">第9天学习笔记</a>
           </li>
         
@@ -1139,10 +1166,6 @@
         
           <li>
             <a href="/2023/11/14/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-6/">第6天学习笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/13/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-5/">第5天学习笔记</a>
           </li>
         
       </ul>
