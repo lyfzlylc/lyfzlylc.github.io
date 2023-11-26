@@ -59,6 +59,69 @@
       <div id="middlecontent" title class="global-width sidebar-right">
         <section id="main">
   
+    <article id="我的博客-我的博客-3" class="article global-container article-type-我的博客" itemscope itemprop="blogPost">
+  
+    <header class="article-header">
+      
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-3/">第3天学习笔记</a>
+    </h1>
+  
+
+    </header>
+  
+  <div class="article-meta">
+    <a href="/2023/11/09/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-3/" class="article-date">
+  <time datetime="2023-11-09T09:20:31.000Z" itemprop="datePublished">2023-11-09</time>
+</a>
+    
+    
+  </div>
+  
+
+  <div class="article-inner">
+    
+    <div class="article-content article-content-cloud" itemprop="articleBody">
+      
+        <h1 id="博客主题的更换"><a href="#博客主题的更换" class="headerlink" title="博客主题的更换"></a>博客主题的更换</h1><h3 id="主要步骤如下"><a href="#主要步骤如下" class="headerlink" title="主要步骤如下"></a>主要步骤如下</h3><ol>
+<li><p>访问<a target="_blank" rel="noopener" href="https://hexo.io/themes/">hexo主题网站</a>,选择适合主题</p>
+</li>
+<li><p>安装</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git clone https://github.com/yiluyanxia/hexo-theme-antiquity.git</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>使用</p>
+<p>将根目录中的config.yml文件中的theme修改为antiquity。</p>
+</li>
+<li><p>更新</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cd themes/antiquity</span><br><span class="line">git pull</span><br></pre></td></tr></table></figure></div>
+
+<p>在操作时需要注意theme中的antiquity文件可能不在当前目录中，而是在blog目录下名为hexo-theme-antiquity，需要复制文件到主题文件下，并重命名为antiquity。且进行git pull命令时需要关闭代理。</p>
+<p>成功显示如下：</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231109170635058.png" alt="image-20231109170635058"></p>
+</li>
+<li><p>回退到blog目录,执行如下命令</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">cd ../..</span><br><span class="line">hexo s</span><br><span class="line">hexo d -g</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>具体配置</p>
+<div class="highlight-box"autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false" contenteditable="true"data-rel="PLAINTEXT"><figure class="iseeu highlight /plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"># Header</span><br><span class="line">menu:</span><br><span class="line">  Home: /</span><br><span class="line">  Archives: /archives</span><br><span class="line">rss: /atom.xml</span><br><span class="line"></span><br><span class="line"># Content</span><br><span class="line">excerpt_link: 阅读全文</span><br><span class="line">fancybox: true</span><br><span class="line"></span><br><span class="line"># Sidebar</span><br><span class="line">sidebar: left</span><br><span class="line">widgets:</span><br><span class="line">- category</span><br><span class="line">- tag</span><br><span class="line">- tagcloud</span><br><span class="line">- archives</span><br><span class="line">- recent_posts</span><br><span class="line"></span><br><span class="line"># Background</span><br><span class="line"># background_image: /images/bg.jpeg</span><br><span class="line">background_title: 图片来自网络</span><br><span class="line"></span><br><span class="line"># favicon</span><br><span class="line">favicon: /images/default-avatar.jpg</span><br><span class="line"></span><br><span class="line">#Userinfo</span><br><span class="line">author: 一路烟霞</span><br><span class="line">slogan: 特别耐撕的小前端，资深的打酱油攻城狮。</span><br><span class="line"># avatar: /images/code-title.png</span><br><span class="line">avatar_title: 图片来自网络</span><br><span class="line"></span><br><span class="line"># Article code panel: cloud doorframe mac</span><br><span class="line">highlightPanel: cloud</span><br><span class="line"></span><br><span class="line">#Gitment</span><br><span class="line">gitment:</span><br><span class="line">  owner: </span><br><span class="line">  repo: </span><br><span class="line">  client_id: </span><br><span class="line">  client_secret: </span><br><span class="line"></span><br><span class="line"># Miscellaneous</span><br><span class="line">google_analytics:</span><br><span class="line">gauges_analytics:</span><br><span class="line">google_site_verification: </span><br><span class="line">baidu_site_verification: </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"># 友情链接</span><br><span class="line">blogroll:</span><br><span class="line">  一路眼瞎: https://yiluyanxia.github.io/</span><br></pre></td></tr></table></figure></div>
+</li>
+<li><p>主题更换后显示</p>
+<p><img src="https://cdn.jsdelivr.net/gh/lyfzlylc/image@main//imgimage-20231109171206857.png" alt="image-20231109171206857"></p>
+</li>
+<li><p>结束</p>
+</li>
+</ol>
+
+      
+    </div>
+    
+  </div>
+  
+  
+</article>
+
+  
     <article id="我的博客-我的博客-2" class="article global-container article-type-我的博客" itemscope itemprop="blogPost">
   
     <header class="article-header">
@@ -495,6 +558,10 @@
       <ul>
         
           <li>
+            <a href="/2023/11/24/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-13/">第13天学习笔记</a>
+          </li>
+        
+          <li>
             <a href="/2023/11/23/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-12/">第12天学习笔记</a>
           </li>
         
@@ -508,10 +575,6 @@
         
           <li>
             <a href="/2023/11/20/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-9/">第9天学习笔记</a>
-          </li>
-        
-          <li>
-            <a href="/2023/11/17/%E6%88%91%E7%9A%84%E5%8D%9A%E5%AE%A2-8/">第8天学习笔记</a>
           </li>
         
       </ul>
